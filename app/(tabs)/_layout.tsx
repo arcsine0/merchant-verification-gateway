@@ -19,16 +19,43 @@ export default function TabLayout() {
 				options={{
 					title: 'Home',
 					tabBarIcon: ({ color, focused }) => (
-						<TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+						<TabBarIcon name="home" color={color} />
 					),
 				}}
 			/>
 			<Tabs.Screen
-				name="explore"
+				name="history"
 				options={{
-					title: 'Explore',
+					title: 'History',
 					tabBarIcon: ({ color, focused }) => (
-						<TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+						<TabBarIcon name="history" color={color} />
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="send"
+				options={{
+					title: 'Send',
+					tabBarIcon: ({ color, focused }) => (
+						<TabBarIcon name="paper-airplane" color={color} />
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="link"
+				options={{
+					title: 'Link',
+					tabBarIcon: ({ color, focused }) => (
+						<TabBarIcon name="credit-card" color={color} />
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="settings"
+				options={{
+					title: 'Settings',
+					tabBarIcon: ({ color, focused }) => (
+						<TabBarIcon name="gear" color={color} />
 					),
 				}}
 			/>
